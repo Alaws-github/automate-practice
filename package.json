@@ -1,0 +1,44 @@
+{
+  "name": "tern-bicycles-automation",
+  "version": "1.0.0",
+  "description": "QualityWorks Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "home": "./node_modules/.bin/wdio wdio.conf.js --suite home",
+    "support_user": "./node_modules/.bin/wdio wdio.conf.js --suite support_user",
+    "support_guest": "./node_modules/.bin/wdio wdio.conf.js --suite support_guest",
+    "admin_translations": "./node_modules/.bin/wdio wdio.conf.js --suite admin_translations",
+    "permissions_dealer": "./node_modules/.bin/wdio wdio.conf.js --suite permissions_dealer",
+    "permissions_distributor": "./node_modules/.bin/wdio wdio.conf.js --suite permissions_distributor",
+    "allure-reports": "allure serve $(pwd)/allure-results"
+  },
+  "author": "QualityWorks Consulting Group",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.5.2",
+    "@wdio/cli": "^6.5.2",
+    "@wdio/concise-reporter": "^6.4.7",
+    "@wdio/dot-reporter": "^6.4.7",
+    "@wdio/local-runner": "^6.5.0",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/selenium-standalone-service": "^6.4.7",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "6.4.6",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^0.4.3",
+    "local-runner": "^0.1.1-alpha",
+    "mocha": "^5.2.0",
+    "webdriverio": "^6.5.2"
+  },
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "chance": "^1.1.7",
+    "chromedriver": "^2.46.0",
+    "faker": "^4.1.0",
+    "local": "^0.3.3",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "wdio-local-runner": "^5.0.0-alpha.7",
+    "yarn": "^1.22.5"
+  }
+}

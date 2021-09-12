@@ -1,0 +1,5 @@
+node_modules
+allure-results
+wdio-0-0-server.log
+allure-report
+.DS_Store
